@@ -1,0 +1,75 @@
+@mixin ring ($color, $size) {
+  display: flex;
+  flex-flow: wrap;
+  width: $size;
+  height: $size;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: $size/8;
+  border-color: $color;
+  border-radius: 50%;
+  box-shadow: $size/16 $size/16 $size/16 darken($color, 10%);
+  margin: 1em;
+}
+
+@mixin joinRings ($overlap) {
+  margin: 0em;
+  margin-left: $overlap;
+}
+
+@mixin makeFlex($margin) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: $margin;
+}
+
+@mixin makeRow (){
+    flex-direction: row;
+    flex-flow: nowrap;
+}
+
+body {
+  background: #ccc;
+  font-family: 'IM Fell English', serif;
+  font-size: 3em;
+        h1 {
+        display: flex;
+        float: right;
+        flex-flow: nowrap;
+        }
+        h2 {
+          font-weight: bold;
+        }
+        p {
+          font-size: 2em;
+          font-weight: bolder;
+          text-align: center;
+        }
+        div {
+        display: flex;
+        justify-content: space-around;
+        }
+    .ringContainer {
+    @include makeFlex(0.5em);
+    @include makeRow();
+    }
+    .sixringsContainer {
+      @include makeFlex (0.5em);
+      @include makeRow();
+    }
+    .ringOrg {
+    @include ring(darkorange, 1.5em);
+    }
+    .ringYel {
+    @include ring(gold, 3.5em);
+    }
+    @for $i from 1 through  6{
+          span:nth-child(#{$i}) {
+              @include ring(grey, $i*0.375em);
+              @include joinRings($i*-0.5%);
+          }
+      }
+
+}

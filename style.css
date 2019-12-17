@@ -1,0 +1,159 @@
+body {
+  background: #ccc;
+  font-family: "IM Fell English", serif;
+  font-size: 3em;
+}
+body h1 {
+  display: flex;
+  float: right;
+  flex-flow: nowrap;
+}
+body h2 {
+  font-weight: bold;
+}
+body p {
+  font-size: 2em;
+  font-weight: bolder;
+  text-align: center;
+}
+body div {
+  display: flex;
+  justify-content: space-around;
+}
+body .ringContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em;
+  flex-direction: row;
+  flex-flow: nowrap;
+}
+body .sixringsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0em;
+  flex-direction: row;
+  flex-flow: nowrap;
+}
+body .ringOrg {
+  display: flex;
+  flex-flow: wrap;
+  width: 1.5em;
+  height: 1.5em;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 0.1875em;
+  border-color: darkorange;
+  border-radius: 50%;
+  box-shadow: 0.09375em 0.09375em 0.09375em #cc7000;
+  margin: 1em;
+}
+body .ringYel {
+  display: flex;
+  flex-flow: wrap;
+  width: 3.5em;
+  height: 3.5em;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 0.4375em;
+  border-color: gold;
+  border-radius: 50%;
+  box-shadow: 0.21875em 0.21875em 0.21875em #ccac00;
+  margin: 1em;
+  background-color: transparent;
+  background-size: 0%;
+}
+
+body span:nth-child(1) {
+  display: flex;
+  flex-flow: wrap;
+  width: 0.375em;
+  height: 0.375em;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 0.046875em;
+  border-color: grey;
+  border-radius: 50%;
+  box-shadow: 0.0234375em 0.0234375em 0.0234375em #676767;
+  margin: 0em;
+  margin-left: -1%;
+}
+body span:nth-child(2) {
+  display: flex;
+  flex-flow: wrap;
+  width: 0.75em;
+  height: 0.75em;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 0.09375em;
+  border-color: grey;
+  border-radius: 50%;
+  box-shadow: 0.046875em 0.046875em 0.046875em #676767;
+  margin: 0em;
+  margin-left: -0.7%;
+}
+body span:nth-child(3) {
+  display: flex;
+  flex-flow: wrap;
+  width: 1.125em;
+  height: 1.125em;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 0.140625em;
+  border-color: grey;
+  border-radius: 50%;
+  box-shadow: 0.0703125em 0.0703125em 0.0703125em #676767;
+  margin: 0em;
+  margin-left: -1.2%;
+}
+body span:nth-child(4) {
+  display: flex;
+  flex-flow: wrap;
+  width: 1.5em;
+  height: 1.5em;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 0.1875em;
+  border-color: grey;
+  border-radius: 50%;
+  box-shadow: 0.09375em 0.09375em 0.09375em #676767;
+  margin: 0em;
+  margin-left: -2%;
+}
+body span:nth-child(5) {
+  display: flex;
+  flex-flow: wrap;
+  width: 1.875em;
+  height: 1.875em;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 0.234375em;
+  border-color: grey;
+  border-radius: 50%;
+  box-shadow: 0.1171875em 0.1171875em 0.1171875em #676767;
+  margin: 0em;
+  margin-left: -2.5%;
+}
+body span:nth-child(6) {
+  display: flex;
+  flex-flow: wrap;
+  width: 2.25em;
+  height: 2.25em;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 0.28125em;
+  border-color: grey;
+  border-radius: 50%;
+  box-shadow: 0.140625em 0.140625em 0.140625em #676767;
+  margin: 0em;
+  margin-left: -3%;
+}
